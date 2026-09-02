@@ -55,7 +55,7 @@ body:
     id: logs
     attributes:
       label: Sanitized logs
-      description: Remove credentials, private endpoints, tenant/subscription IDs, and user data.
+      description: Remove credentials, private endpoints, tenant/subscription IDs, private registry names, cluster addresses, and user data.
       render: shell
     validations:
       required: true
@@ -64,7 +64,7 @@ body:
     attributes:
       label: Safety checks
       options:
-        - label: I removed credentials, private endpoints, tenant or subscription IDs, and user data.
+        - label: I removed credentials, private endpoints, tenant or subscription IDs, private registry names, cluster addresses, and user data.
           required: true
         - label: I searched existing issues and reproduced this on a current commit or release.
           required: true

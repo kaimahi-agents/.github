@@ -3,6 +3,10 @@ description: Describe the user problem before proposing a component
 title: "[Feature]: "
 labels: [enhancement]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include credentials, private endpoints, tenant or subscription IDs, private registry names, cluster addresses, or user data.
   - type: textarea
     id: problem
     attributes:
@@ -37,4 +41,6 @@ body:
       label: Existing capability check
       options:
         - label: I checked whether kagent, Kubernetes, or an MCP component already provides this capability.
+          required: true
+        - label: I removed credentials, private endpoints, tenant or subscription IDs, private registry names, cluster addresses, and user data.
           required: true
