@@ -21,7 +21,7 @@ proposed, or unbuilt.
 - **[Run the quickstart](https://github.com/kaimahi-agents/kaimahi/blob/main/docs/getting-started.md)**
 - [Capability documentation](https://github.com/kaimahi-agents/kaimahi/blob/main/docs/README.md)
 - [Status and limitations](https://github.com/kaimahi-agents/kaimahi#status)
-- [Contribute](https://github.com/kaimahi-agents/kaimahi/blob/main/CONTRIBUTING.md)
+- [Contribute](https://github.com/kaimahi-agents/.github/blob/main/CONTRIBUTING.md)
 - [Report a security issue privately](https://github.com/kaimahi-agents/kaimahi/security/advisories/new)
 
 The name is provisional; see the
