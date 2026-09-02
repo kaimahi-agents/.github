@@ -1,0 +1,70 @@
+name: Bug report
+description: Report a reproducible problem without secrets
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Sanitize logs before attaching them.
+        Use private vulnerability reporting for suspected vulnerabilities.
+  - type: input
+    id: version
+    attributes:
+      label: Commit or version
+      placeholder: main at abc1234
+    validations:
+      required: true
+  - type: input
+    id: kubernetes
+    attributes:
+      label: Kubernetes distribution and version
+      placeholder: kind v0.33.0 / Kubernetes v1.33.x
+    validations:
+      required: true
+  - type: dropdown
+    id: target
+    attributes:
+      label: Deployment target
+      options:
+        - kind
+        - AKS
+        - Other conformant Kubernetes cluster
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Give the shortest exact sequence that reproduces the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized logs
+      description: Remove credentials, private endpoints, tenant/subscription IDs, private registry names, cluster addresses, and user data.
+      render: shell
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety checks
+      options:
+        - label: I removed credentials, private endpoints, tenant or subscription IDs, private registry names, cluster addresses, and user data.
+          required: true
+        - label: I searched existing issues and reproduced this on a current commit or release.
+          required: true

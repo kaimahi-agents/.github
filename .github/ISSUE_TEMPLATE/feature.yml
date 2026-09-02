@@ -1,0 +1,46 @@
+name: Feature request
+description: Describe the user problem before proposing a component
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include credentials, private endpoints, tenant or subscription IDs, private registry names, cluster addresses, or user data.
+  - type: textarea
+    id: problem
+    attributes:
+      label: User problem
+      description: Who is blocked, and what can they not do safely or simply today?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: Define observable success without prescribing an implementation.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives and current workaround
+      description: Include relevant kagent, Kubernetes, or MCP capabilities you considered.
+    validations:
+      required: true
+  - type: textarea
+    id: governance
+    attributes:
+      label: Governance impact
+      description: Note effects on credentials, spend, tools, approvals, network boundaries, audit, or blast radius.
+    validations:
+      required: true
+  - type: checkboxes
+    id: survey
+    attributes:
+      label: Existing capability check
+      options:
+        - label: I checked whether kagent, Kubernetes, or an MCP component already provides this capability.
+          required: true
+        - label: I removed credentials, private endpoints, tenant or subscription IDs, private registry names, cluster addresses, and user data.
+          required: true

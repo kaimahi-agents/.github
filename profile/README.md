@@ -1,14 +1,29 @@
-# kaimahi-agents
+<p align="center">
+  <img src="https://raw.githubusercontent.com/kaimahi-agents/kaimahi/main/brand/hero.png"
+       alt="Kaimahi night worker guarding paths for AI agents"
+       width="100%">
+</p>
 
-Home of **[kaimahi](https://github.com/kaimahi-agents/kaimahi)**, an incubation
-project: a governance plane for Kubernetes-hosted AI agents built on
-[kagent](https://kagent.dev) — budgets and spend metering, credential custody
-for LLM calls, an enforcing tool gateway with allowlists and audit, and human
-approvals that mint bounded permits.
+# Kaimahi
 
-It is an idea being worked out in the open. The name is provisional; see the
-project's [naming record](https://github.com/kaimahi-agents/kaimahi/blob/main/docs/NAMING.md).
+**Governance for AI agents running on Kubernetes.**
 
-- [Getting started](https://github.com/kaimahi-agents/kaimahi/blob/main/docs/getting-started.md)
-- [Guide](https://github.com/kaimahi-agents/kaimahi/blob/main/docs/GUIDE.md)
-- [FAQ](https://github.com/kaimahi-agents/kaimahi/blob/main/docs/FAQ.md)
+Kaimahi is an incubation project built on [kagent](https://kagent.dev). It adds
+model-call budgets and metering, keeps provider credentials away from agents,
+constrains and audits tool calls, and supports human approval through bounded
+grants for consequential actions.
+
+Work happens in public. Capability labels say what is built, demonstrated once,
+proposed, or unbuilt.
+
+## Start here
+
+- **[Run the quickstart](https://github.com/kaimahi-agents/kaimahi/blob/main/docs/getting-started.md)**
+- [Capability documentation](https://github.com/kaimahi-agents/kaimahi/blob/main/docs/README.md)
+- [Status and limitations](https://github.com/kaimahi-agents/kaimahi#status)
+- [Contribute](https://github.com/kaimahi-agents/.github/blob/main/CONTRIBUTING.md)
+- [Report a security issue privately](https://github.com/kaimahi-agents/kaimahi/security/advisories/new)
+
+The name is provisional; see the
+[naming record](https://github.com/kaimahi-agents/kaimahi/blob/main/docs/NAMING.md)
+for its history and remaining checks.
