@@ -1,0 +1,72 @@
+name: Maintenance or engineering task
+description: Propose refactoring, cleanup, reliability, test, CI, dependency, or developer-experience work
+title: "[Maintenance]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for internal engineering work that is neither a user-facing bug report nor a new product capability.
+
+        Do not include credentials, private endpoints, tenant or subscription IDs, private registry names, cluster addresses, or user data.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Application, API, or CLI
+        - Infrastructure and deployment
+        - Reliability and operations
+        - Tests and CI
+        - Build and release
+        - Dependencies
+        - Documentation
+        - Developer experience and tooling
+        - Performance
+        - Security hardening
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Current problem
+      description: Describe the technical debt, inconsistency, maintenance risk, or developer friction.
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed change
+      description: Describe the expected implementation when one is already known.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Acceptance criteria
+      description: Define the observable conditions for completion.
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks and compatibility
+      description: Note behavioral changes, compatibility concerns, or invariants that must remain.
+    validations:
+      required: false
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification
+      description: List focused tests and broader validation expected.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety checks
+      options:
+        - label: I removed credentials, private endpoints, tenant or subscription IDs, private registry names, cluster addresses, and user data.
+          required: true
+        - label: I searched existing issues and checked relevant upstream capabilities.
+          required: true
