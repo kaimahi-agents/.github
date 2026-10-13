@@ -6,24 +6,18 @@
 
 # Kaimahi
 
-**Governance for AI agents running on Kubernetes.**
+**Build, evaluate and ship AI agents on Kubernetes.**
 
-Kaimahi is an incubation project built on [kagent](https://kagent.dev). It adds
-model-call budgets and metering, keeps provider credentials away from agents,
-constrains and audits tool calls, and supports human approval through bounded
-grants for consequential actions.
-
-Work happens in public. Capability labels say what is built, demonstrated once,
-proposed, or unbuilt.
+kmx is an open-source CLI for the agent lifecycle: author agents in a Git workspace, evaluate them against real cases, publish them as versioned [AgentSuites](https://github.com/kaimahi-agents/kaimahi/blob/main/agentsuite/spec.md), and lift an exact evaluated version onto a cluster. It works with Orka and kagent today, and uses agentsessions for recorded, replayable evaluation.
 
 ## Start here
 
-- **[Run the quickstart](https://github.com/kaimahi-agents/kaimahi/blob/main/docs/getting-started.md)**
-- [Capability documentation](https://github.com/kaimahi-agents/kaimahi/blob/main/docs/README.md)
-- [Status and limitations](https://github.com/kaimahi-agents/kaimahi#status)
-- [Contribute](https://github.com/kaimahi-agents/.github/blob/main/CONTRIBUTING.md)
-- [Report a security issue privately](https://github.com/kaimahi-agents/kaimahi/security/advisories/new)
+- **[Install and quickstart](https://github.com/kaimahi-agents/kaimahi/blob/main/docs/getting-started.md)**
+- [Workspaces: create, eval, push, lift](https://github.com/kaimahi-agents/kaimahi/blob/main/docs/suite-workspace.md)
+- [Contribute](https://github.com/kaimahi-agents/.github/blob/main/CONTRIBUTING.md) · [Report a security issue](https://github.com/kaimahi-agents/kaimahi/security/advisories/new)
 
-The name is provisional; see the
-[naming record](https://github.com/kaimahi-agents/kaimahi/blob/main/docs/NAMING.md)
-for its history and remaining checks.
+## Repositories
+
+- [kaimahi](https://github.com/kaimahi-agents/kaimahi): the kmx CLI and the AgentSuite spec
+- [agents](https://github.com/kaimahi-agents/agents): example agents and their evaluation gates
+- [homebrew-tap](https://github.com/kaimahi-agents/homebrew-tap): `brew install kaimahi-agents/tap/kmx`
