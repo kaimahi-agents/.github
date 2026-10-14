@@ -13,7 +13,7 @@ kmx is an open-source CLI for the agent lifecycle: author agents in a Git worksp
 ## Start here
 
 - **[Install and quickstart](https://github.com/kaimahi-agents/kaimahi/blob/main/docs/getting-started.md)**
-- [Workspaces: create, eval, push, lift](https://github.com/kaimahi-agents/kaimahi/blob/main/docs/suite-workspace.md) (on `main`, in the next release)
+- [Workspaces: create, eval, push, lift](https://github.com/kaimahi-agents/kaimahi/blob/main/docs/suite-workspace.md) (available in v0.6.0)
 - [Contribute](https://github.com/kaimahi-agents/.github/blob/main/CONTRIBUTING.md) · [Report a security issue](https://github.com/kaimahi-agents/kaimahi/security/advisories/new)
 
 ## Repositories
